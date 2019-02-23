@@ -1,0 +1,106 @@
+body {
+  
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    
+   
+    color: #555;
+}
+#mainScreen {
+      height: 97vh;
+  position: relative;
+  border: 3px solid blue;
+    
+background: linear-gradient(270deg,  #a0ec9f, #f3e62d, #e8b37e,  #efc5f2 );
+background-size: 800% 800%;
+
+-webkit-animation: cssAnimationGradient 59s ease infinite;
+-moz-animation: cssAnimationGradient 59s ease infinite;
+-o-animation: cssAnimationGradient 59s ease infinite;
+animation: cssAnimationGradient 59s ease infinite;
+}
+#board{
+  margin:auto;
+    
+    position: relative;
+    top: 40%;
+/*    transform: translateY(150%);*/
+    
+  transform: translateY(-50%);
+}
+
+#line{
+	text-align: center;
+	font-size: 30px;
+    font-weight: bold;
+	
+}
+#line2 {
+ position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 300px; /* Need a specific value to work */
+    color: red;
+    font-weight: 600;
+}
+
+#setAlarm{
+	margin: auto;
+	width:50%;
+	
+}
+
+.addValue{
+    width: 60px;
+    height: 60px;
+    color: royalblue;
+    font-size: 45px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    border: 3px solid royalblue;
+    border-radius: 5px;
+    
+    
+   
+}
+
+label {
+  display: inline-block;
+  width: 6em;
+  margin-right: .2em;
+  padding-top: 1.5em;
+    font-weight: 900;
+}
+
+input {
+  display: inline-block;
+    font-weight: 600;
+    font-family: Lato;
+ 
+}
+
+@-webkit-keyframes cssAnimationGradient {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@-moz-keyframes cssAnimationGradient {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@-o-keyframes cssAnimationGradient {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@keyframes cssAnimationGradient { 
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}

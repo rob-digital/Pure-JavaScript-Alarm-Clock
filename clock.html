@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    
+<title>Clock</title>
+    
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+<link rel='stylesheet' href='clock.css'/>
+
+</head>
+<body>
+<div id="mainScreen">
+<div id='board'>
+	<p id="line"></p>
+	<div id="setAlarm" align="center">
+		<label>set Hour<input id="setH" class="addValue" onkeyup="this.value=this.value.replace(/\D/g,'')" maxlength="2"  style="text-align:center"></input></label><b>:</b>
+    <label>set Minutes<input id="setM" class="addValue" onkeyup="this.value=this.value.replace(/\D/g,'')" maxlength="2"  style="text-align:center"></input></label><b>:</b>
+		<label>set Seconds<input id="setS" class="addValue" onkeyup="this.value=this.value.replace(/\D/g,'')" maxlength="2"  style="text-align:center"></input></label><br/>
+		<input type="button" value="SET ALARM"  onclick="alarm() "></input>
+		<input type="button" value="STOP ALARM" onclick="stopAlarm()"></input>
+        <input type="button" value="CLEAR ALL" onClick="clearAll()"> </input>
+		<p id="line2"></p>
+	</div>
+</div>
+</div>
+
+<script src='clock.js'></script>
+
+</body>
+</html>
